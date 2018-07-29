@@ -1,0 +1,11 @@
+<form (submit) = "login(formData)" #formData = "ngForm">
+  <label>Address<input type = "text" name = "address" ngModel></label>
+  <label>Password<input type = "password" name = "password" ngModel></label>
+  <input type = "submit" value = "Login">
+</form>
+<form (submit) = "register(registerData)" #registerData = "ngForm">
+  <label>Address<input type = "text" name = "address" ngModel></label>
+  <label>Password<input type = "password" name = "password" ngModel></label>
+  <input type = "submit" value = "Register">
+</form>
+<p *ngFor = "let error of errors">{{error}}</p>
